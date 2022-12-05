@@ -1,0 +1,123 @@
+.about__container {
+  box-sizing: border-box;
+}
+.about__list {
+  // phone screen
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 738px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+  }
+}
+.about__icon {
+  &--antenna::before {
+    background-image: url(../images/спрайти/antenna.svg);
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  &--clock::before {
+    background-image: url(../images/спрайти/clock.svg);
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  &--diagram::before {
+    background-image: url(../images/спрайти/diagram.svg);
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  &--astronaut::before {
+    background-image: url(../images/спрайти/astronaut.svg);
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+}
+.about__item {
+  box-sizing: border-box;
+
+  // phone screen
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
+
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    width: 270px;
+  }
+  &::before {
+    display: block;
+    content: '';
+
+    // width: 270px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-color: #f5f4fa;
+    background-position: center;
+
+    // phone screen
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
+
+    // tablet screen
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 354px;
+      display: flex;
+    }
+
+    // desktop screen
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+}
+
+.about__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  // phone screen
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+.about__txt {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  // phone screen
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
+}
