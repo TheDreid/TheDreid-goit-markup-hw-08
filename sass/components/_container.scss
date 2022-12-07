@@ -4,22 +4,40 @@ $breakpoints: (
   'desktop': 1200px,
 );
 
+// .container {
+//   outline: 2px solid black;
+//   outline-offset: -2px;
+//   margin: 0 auto;
+//   padding: 0 15px;
+
+//   // phone screen
+//   @media screen and (max-width: 767px) {
+//     width: 450px;
+//   }
+
+//   // tablet screen
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     width: 738px;
+//   }
+
+//   // desktop screen
+//   @media screen and (min-width: 1200px) {
+//     width: 1200px;
+//   }
+// }
+
 .container {
-  outline: 2px solid black;
-  outline-offset: -2px;
+  width: 100%;
+  padding: 0 15px;
   margin: 0 auto;
-  // padding: 0 15px;
-
   // phone screen
-  @media screen and (max-width: 767px) {
-    width: 450px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-
   // tablet screen
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 738px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
-
   // desktop screen
   @media screen and (min-width: 1200px) {
     width: 1200px;

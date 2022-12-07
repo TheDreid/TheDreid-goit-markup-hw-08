@@ -1,10 +1,14 @@
 /*------nav-contacts------------*/
 
-.contacts {
-  gap: 50px;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
+.contacts--nav {
+  display: none;
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    gap: 50px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
 }
 .contacts__mail--nav {
   display: flex;
@@ -43,6 +47,16 @@
   margin-top: 20px;
   font-style: normal;
 }
+.contacts__item--footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  //desktop
+  @media screen and (min-width: 1200px) {
+    justify-content: normal;
+  }
+}
+
 .contacts__item--footer:not(:last-child) {
   margin-bottom: 9px;
 }

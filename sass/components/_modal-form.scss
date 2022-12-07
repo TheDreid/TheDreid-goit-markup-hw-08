@@ -1,6 +1,8 @@
 .modal {
-  width: 528px;
-  height: 581px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 90%;
+  height: 609px;
   background-color: var(--white-background-color);
   position: absolute;
   top: 50%;
@@ -8,6 +10,19 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
   padding: 40px;
+  // phone screen
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__title {
   font-family: 'Roboto';

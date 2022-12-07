@@ -3,7 +3,7 @@
 }
 .about__list {
   // phone screen
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     width: 450px;
     display: flex;
     flex-direction: column;
@@ -11,17 +11,19 @@
   }
 
   // tablet screen
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     width: 738px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    flex-direction: row;
   }
 
   // desktop screen
   @media screen and (min-width: 1200px) {
     width: 1200px;
     display: flex;
+    flex-wrap: nowrap;
   }
 }
 .about__icon {
@@ -50,12 +52,12 @@
   box-sizing: border-box;
 
   // phone screen
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     width: 450px;
   }
 
   // tablet screen
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     width: 354px;
   }
 
@@ -77,12 +79,12 @@
     background-position: center;
 
     // phone screen
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
       width: 450px;
     }
 
     // tablet screen
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       width: 354px;
       display: flex;
     }
@@ -112,7 +114,7 @@
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   // phone screen
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     margin-bottom: 30px;
   }
 

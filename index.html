@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container nav">
         <nav class="nav">
           <a class="logo--upleft link" href="./index.html"
@@ -40,8 +40,8 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts">
-          <li class="nav-list">
+        <ul class="contacts--nav">
+          <li class="contacts__list--nav">
             <a class="contacts__mail--nav link" href="mailto:info@devstudio.com">
               <svg class="contacts__svg--mail" width="16" height="12">
                 <use href="./images/спрайти/symbol-defs.svg#icon-envelope"></use>
@@ -58,8 +58,24 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+
+          >
+           <use href="./images/спрайти/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+       
+    </header>
 
     <main>
       <section class="hero">
@@ -101,7 +117,7 @@
         </div>
       </section>
 
-      <!-- <section class="work section">
+      <section class="work section">
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
@@ -125,7 +141,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <section class="team section">
         <div class="container">
@@ -142,14 +158,14 @@
                 />
                 <source
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  srcset="./images/team/img_md@1x-4.jpg 1x, ./images/team/img_md@1x-4.jpg 2x"
+                  srcset="./images/team/img_md@1x-4.jpg 1x, ./images/team/img_md@2x-4.jpg 2x"
                   type="image/jpg"
                   width="354"
                   height="374"
                 />
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images/team/img_sm@1x-4.jpg 1x, ./images/team/img_sm@1x-4.jpg 2x"
+                  srcset="./images/team/img_sm@1x-4.jpg 1x, ./images/team/img_sm@2x-4.jpg 2x"
                   type="image/jpg"
                   width="450"
                   height="460"
@@ -203,14 +219,14 @@
                 />
                 <source
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  srcset="./images/team/img_md@1x-1.jpg 1x, ./images/team/img_md@1x-1.jpg 2x"
+                  srcset="./images/team/img_md@1x-1.jpg 1x, ./images/team/img_md@2x-1.jpg 2x"
                   type="image/jpg"
                   width="354"
                   height="374"
                 />
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images/team/img_sm@1x-1.jpg 1x, ./images/team/img_sm@1x-1.jpg 2x"
+                  srcset="./images/team/img_sm@1x-1.jpg 1x, ./images/team/img_sm@2x-1.jpg 2x"
                   type="image/jpg"
                   width="450"
                   height="460"
@@ -263,14 +279,14 @@
                 />
                 <source
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  srcset="./images/team/img_md@1x-2.jpg 1x, ./images/team/img_md@1x-2.jpg 2x"
+                  srcset="./images/team/img_md@1x-2.jpg 1x, ./images/team/img_md@2x-2.jpg 2x"
                   type="image/jpg"
                   width="354"
                   height="374"
                 />
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images/team/img_sm@1x-2.jpg 1x, ./images/team/img_sm@1x-2.jpg 2x"
+                  srcset="./images/team/img_sm@1x-2.jpg 1x, ./images/team/img_sm@2x-2.jpg 2x"
                   type="image/jpg"
                   width="450"
                   height="460"
@@ -323,14 +339,14 @@
                 />
                 <source
                   media="(min-width: 768px) and (max-width: 1199px)"
-                  srcset="./images/team/img_md@1x-3.jpg 1x, ./images/team/img_md@1x-3.jpg 2x"
+                  srcset="./images/team/img_md@1x-3.jpg 1x, ./images/team/img_md@2x-3.jpg 2x"
                   type="image/jpg"
                   width="354"
                   height="374"
                 />
                 <source
                   media="(max-width: 767px)"
-                  srcset="./images/team/img_sm@1x-3.jpg 1x, ./images/team/img_sm@1x-3.jpg 2x"
+                  srcset="./images/team/img_sm@1x-3.jpg 1x, ./images/team/img_sm@2x-3.jpg 2x"
                   type="image/jpg"
                   width="450"
                   height="460"
@@ -427,9 +443,9 @@
       </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer ">
       <section class="">
-        <div class=" footer__container">
+        <div class=" footer__container container">
           <div class="container-addres">
             <a class="logo--downleft link" href="./index.html"
               >Web<span class="logo--downright">Studio</span></a
@@ -506,7 +522,7 @@
       </section>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="modal ">
         <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
         <form action="">
           <label for="">
@@ -582,6 +598,47 @@
         </button>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="#212121"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+        >
+           <use href="./images/спрайти/symbol-defs.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <div class="menu__nav--list">
+        <ul class="menu__nav--list-link">
+         <li><a href="" class="menu--link link">Студія</a></li>
+         <li><a href="" class="menu--link link">Портфоліо</a></li>
+         <li><a href="" class="menu--link link">Контакти</a></li>
+       </ul>
+      </div>
+      <div class="menu__nav--list">
+        <ul class="menu__nav--list-contacts">
+          <li><a href="" class="menu__nav--contacts-tel"></a>+38 096 111 11 11</li>
+          <li><a href="" class="menu__nav--contacts">info@devstudio.com</a></li>
+        </ul>
+      </div>
+      <div class="menu__nav--list">
+        <ul class="menu_nav--list-social">
+          <li><a href="" class="menu__nav--social"></a>Instagram</li>
+          <li><a href="" class="menu__nav--social"></a>Twitter</li>
+          <li><a href="" class="menu__nav--social"></a>Facebook</li>
+          <li><a href="" class="menu__nav--social"></a>LinkedIn</li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -3,8 +3,27 @@
   padding-bottom: 94px;
 }
 .filter__list {
-  margin-bottom: 50px;
+  max-width: 326px;
+  width: auto;
+  margin: 0 0 50px 0;
   gap: 8px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  // phone screen
+  @media screen and (min-width: 480px) {
+    width: 326px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    margin: 0 auto 30px auto;
+    max-width: none;
+    width: 575px;
+  }
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }

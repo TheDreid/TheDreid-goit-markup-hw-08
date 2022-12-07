@@ -1,16 +1,25 @@
 .hero {
   margin-right: auto;
   margin-left: auto;
-
+  padding-top: 118px;
   padding-bottom: 200px;
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../images/hero/bg_sm@1x.jpg);
+  // mobile screen retina
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/hero/bg_sm@2x.jpg);
+  }
 
   // phone screen
-  @media screen and (max-width: 767px) {
-    padding-top: 118px;
-    width: 480px;
+  @media screen and (min-width: 480px) {
+    width: 450;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/hero/bg_sm@1x.jpg);
@@ -24,7 +33,7 @@
   }
 
   // tablet screen
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     padding-top: 118px;
     width: 768px;
     height: 400px;
@@ -41,6 +50,7 @@
 
   // desktop screen
   @media screen and (min-width: 1200px) {
+    width: 1600px;
     padding-top: 200px;
     max-width: 1600px;
     height: 600px;
@@ -56,16 +66,17 @@
   text-transform: uppercase;
   color: var(--white-text-color);
   margin: 0 auto;
+  width: auto;
 
   // phone screen
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     width: 360px;
     font-size: 26px;
     line-height: 1.62;
   }
 
   // tablet screen
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     width: 360px;
     font-weight: 900;
     font-size: 26px;
