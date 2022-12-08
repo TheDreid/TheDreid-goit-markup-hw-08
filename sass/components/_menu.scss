@@ -78,6 +78,11 @@
   list-style: none;
 }
 
+.menu__nav {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
 .menu__nav--list-link {
   flex-direction: column;
   gap: 32px;

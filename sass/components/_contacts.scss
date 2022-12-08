@@ -2,12 +2,21 @@
 
 .contacts--nav {
   display: none;
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    gap: 10px;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
   // desktop screen
   @media screen and (min-width: 1200px) {
     gap: 50px;
     margin-left: auto;
     display: flex;
     align-items: center;
+    flex-direction: row;
   }
 }
 .contacts__mail--nav {
