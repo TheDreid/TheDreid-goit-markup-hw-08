@@ -665,6 +665,7 @@ img {
 @media screen and (min-width: 480px) {
   .about__list {
     width: 450px;
+    gap: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -700,6 +701,10 @@ img {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    gap: 30px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -741,9 +746,6 @@ img {
 @media screen and (min-width: 1200px) {
   .about__item {
     width: 270px;
-  }
-  .about__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 .about__item::before {
@@ -792,11 +794,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-@media screen and (min-width: 480px) {
-  .about__txt {
-    margin-bottom: 30px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .about__txt {
@@ -866,13 +863,19 @@ img {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
@@ -972,6 +975,7 @@ img {
 /* -------footer-social----- */
 .social--footer {
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 480px) {
   .social--footer {
@@ -986,6 +990,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .social--footer {
+    margin-top: 12px;
     margin-left: 70px;
   }
 }
@@ -1005,6 +1010,13 @@ img {
   color: var(--white-text-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .social__title--footer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 .social__list--footer {
   display: -webkit-box;
@@ -1014,12 +1026,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 480px) {
-  .social__list--footer {
-    margin-bottom: 60px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .social__list--footer {
@@ -1061,13 +1067,20 @@ img {
 }
 
 .clients__titel {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: Roboto;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .clients__titel {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .clients__list {
@@ -1174,9 +1187,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1208,18 +1218,23 @@ img {
     -webkit-box-align: normal;
         -ms-flex-align: normal;
             align-items: normal;
+    margin-left: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer__spam {
     margin-top: 60px;
-    margin-left: 166px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__spam {
+    margin-bottom: auto;
+    margin-top: 12px;
     margin-left: auto;
+    margin-right: 0;
   }
 }
 
@@ -1310,7 +1325,7 @@ img {
 }
 @media screen and (min-width: 480px) {
   .footer__spam-mail {
-    width: 460px;
+    width: 450px;
     margin-bottom: 20px;
   }
 }
@@ -1763,12 +1778,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: auto;
 }
 
 .menu__nav--list-link {
+  height: 208px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1785,11 +1799,9 @@ img {
   letter-spacing: 0.02em;
 }
 
-.menu__nav--list-link {
-  margin-bottom: 302px;
-}
-
 .menu__nav--list-contacts {
+  position: fixed;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1798,7 +1810,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 64px;
+  margin-bottom: 134px;
 }
 
 .menu__nav--contacts-tel {
@@ -1818,6 +1830,9 @@ img {
 }
 
 .menu_nav--list-social {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 48px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px;
