@@ -5,15 +5,26 @@
   align-items: center;
   justify-content: center;
   margin-left: auto;
-
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+  }
 }
-
+.close-menu {
+  background-color: transparent;
+  fill: #212121;
+  &:hover,
+  &:focus,
+  &:active {
+    fill: #2196f3;
+  }
+}
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -21,8 +32,10 @@
 }
 
 .menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+.menu-toggle:focus,
+.menu-toggle:active {
+  background-color: transparent;
+  fill: #2196f3;
 }
 
 .menu-container {
@@ -89,17 +102,17 @@
   margin-bottom: 64px;
 }
 .menu__nav--contacts-tel {
-  color: #2196f3;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  color: #2196f3;
 }
 .menu__nav--contacts-mail {
   color: #757575;
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
@@ -107,7 +120,6 @@
   flex-wrap: wrap;
   gap: 20px;
   display: flex;
-
   color: #2196f3;
   font-weight: 500;
   font-size: 18px;
