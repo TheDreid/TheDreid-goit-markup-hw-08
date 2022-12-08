@@ -123,11 +123,15 @@
 
 .menu_nav--list-social {
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   display: flex;
   color: #2196f3;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+}
+.menu__nav--social:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid #21212133;
 }
