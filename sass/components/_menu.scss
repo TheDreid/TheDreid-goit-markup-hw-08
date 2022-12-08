@@ -26,6 +26,14 @@
 }
 
 .menu-container {
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
   max-width: 480px;
   position: fixed;
   top: 0;
