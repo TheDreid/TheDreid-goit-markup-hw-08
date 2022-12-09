@@ -1779,6 +1779,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 .menu__nav--list-link {
@@ -1796,6 +1797,10 @@ img {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+}
+
+.nav__link--current-menu {
+  color: #2196f3;
 }
 
 .menu__nav--list-contacts {
@@ -1827,7 +1832,6 @@ img {
 }
 
 .menu_nav--list-social {
-  margin-bottom: 48px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px;
